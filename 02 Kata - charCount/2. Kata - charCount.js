@@ -49,3 +49,11 @@ function countChar1(str) {
   }
   return charCount;
 }
+
+// A more shorter code giving the same results.
+function countChar2(str) {
+  return str.split('').reduce((acc, char) => {
+    acc[char] = acc[char] ? acc[char] + 1 : 1;
+    return acc;
+  }, {})
+}
