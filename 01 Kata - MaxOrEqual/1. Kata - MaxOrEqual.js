@@ -14,7 +14,7 @@ const array = [5, 3, 15, 22, 4];
 
 console.log(existsLargerNumber(array, number));
 
-// Created function
+// Initial created function
 function existsLargerNumber(arr, n) {
     if (arr.length === 0) return false;
   
@@ -25,3 +25,15 @@ function existsLargerNumber(arr, n) {
     }
     return false;
   }
+
+  // A more shorter code giving the same results.
+//   function existsLargerNumber(arr, n) {
+//     return arr.length > 0 && arr.some(num => num >= n);
+//   }
+
+// A function provided by the tutor
+function existsHigher(arr, n) {
+    // console.log(...arr);
+    return Math.max(...arr)>=n
+}
+
